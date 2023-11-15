@@ -1,0 +1,65 @@
+@import '../../common-styles/variable.scss';
+
+.BannerCard_otr {
+    .BannerCard_inr {
+        position: relative;
+
+        &:hover {
+            .content_otr {
+                background-color: $Primary;
+
+                .card_heading {
+                    color: $White;
+                }
+            }
+        }
+
+        .card_bg {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .content_otr {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 4;
+            background-color: $Primary-50;
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
+            transition: .3s;
+
+            .card_heading {
+                color: $Dark;
+                text-align: center;
+                transition: .3s;
+            }
+        }
+    }
+}
+
+.BannerSection_main {
+    margin: 130px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    .container {
+        @media (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    .row_custom {
+        gap: 24px 0;
+    }
+}

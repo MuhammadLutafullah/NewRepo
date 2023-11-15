@@ -1,0 +1,90 @@
+@import '../../common-styles/variable.scss';
+
+.HeroSlider_main {
+    padding-top: 48px;
+
+    .row_custom {
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 72px 0;
+        padding: 48px;
+        background-color: $Light-Bg2;
+        border-radius: 16px;
+
+        @media (max-width: 1100px) {
+            padding: 40px 24px;
+        }
+
+        @media (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+
+        .col_content_inr {
+            .hero_heading {
+                color: $Dark;
+
+                span {
+                    display: inline;
+                }
+
+                .heading_icon {
+                    height: 60px;
+                    width: auto;
+                    object-fit: contain;
+
+                    @media (max-width: 1100px) {
+                        height: 50px;
+                    }
+                }
+            }
+
+            .hero_desc {
+                color: $Dark;
+                margin: 24px 0 48px 0;
+            }
+
+            .action_otr {
+                display: flex;
+            }
+        }
+
+        .col_img_otr {
+            width: 50%;
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+        }
+
+        .col_img_inr {
+            padding-left: 48px;
+
+            @media (max-width: 992px) {
+                padding-left: 0;
+            }
+
+            .hero_img {
+                height: 500px;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                transform: scaleX(0);
+                transform-origin: center right 0;
+                border-radius: 8px;
+                transition: .8s;
+            }
+
+            .swiper-slide-active {
+                .hero_img {
+                    transform: scaleX(1);
+                    transition: .8s;
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+        }
+    }
+}

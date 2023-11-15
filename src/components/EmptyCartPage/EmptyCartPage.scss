@@ -1,0 +1,53 @@
+@import '../../common-styles/variable.scss';
+
+.EmptyCartPage_main {
+    .EmptyCart_section {
+        position: relative;
+        padding: 130px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 20%;
+            height: 100%;
+            background-color: $Primary;
+        }
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+    }
+
+    .row_custom {
+        position: relative;
+        justify-content: center;
+        z-index: 2;
+
+        .col_content_inr {
+            text-align: center;
+
+            .cart_heading {
+                color: $Dark;
+            }
+
+            .cart_desc {
+                color: $Dark-65;
+                margin: 24px 0 40px 0;
+
+                @media (max-width: 992px) {
+                    margin: 16px 0 24px 0;
+                }
+            }
+
+            .action_otr {
+                display: inline-flex;
+            }
+        }
+    }
+}

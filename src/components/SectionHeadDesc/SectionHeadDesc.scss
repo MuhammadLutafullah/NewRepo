@@ -1,0 +1,19 @@
+@import '../../common-styles/variable.scss';
+
+.SectionHeadDesc_main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 12px;
+    margin-bottom: 48px;
+
+    .sectoin_heading {
+        color: $Dark;
+        margin-bottom: 12px;
+    }
+
+    .section_desc {
+        color: $Dark-65;
+    }
+}

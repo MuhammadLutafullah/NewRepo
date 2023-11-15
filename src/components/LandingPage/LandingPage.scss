@@ -1,0 +1,33 @@
+@import '../../common-styles/variable.scss';
+
+.LandingPage_main {
+    .ContactSection_main {
+        .col_form_inr {
+            .select_main {
+                margin-bottom: 24px;
+
+                .dd_header {
+
+                    .dd_header_title,
+                    svg {
+                        color: $Dark-40;
+                    }
+                }
+
+                .dd_list_otr {
+                    width: 100%;
+                }
+
+                .dd_list_otr {
+                    z-index: 20;
+                }
+
+                .drop_li {
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

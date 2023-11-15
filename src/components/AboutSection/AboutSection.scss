@@ -1,0 +1,88 @@
+@import '../../common-styles/variable.scss';
+
+.AboutSection_main {
+    position: relative;
+    margin: 130px 0;
+
+    @media (max-width: 992px) {
+        margin: 72px 0;
+    }
+
+    @media (max-width: 575px) {
+        margin: 48px 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $Light-Bg2;
+        width: 100%;
+        height: 80%;
+    }
+
+    .container {
+        @media (max-width: 1200px) {
+            padding: 0;
+        }
+    }
+
+    .row_custom {
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 72px 0;
+        z-index: 4;
+
+        .col_img_otr {
+            width: 45%;
+
+            .about_img {
+                width: 100%;
+                height: 720px;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 8px;
+            }
+        }
+
+        .col_content_otr {
+            width: 50%;
+
+            .about_heading {
+                color: $Dark;
+            }
+
+            .about_desc {
+                color: $Dark;
+                margin: 24px 0;
+            }
+
+            .about_ul {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 40px;
+
+                .about_li {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    svg,
+                    span {
+                        color: $Dark;
+                    }
+                }
+            }
+
+            .action_otr {
+                display: inline-flex;
+            }
+        }
+    }
+}

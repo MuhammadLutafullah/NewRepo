@@ -1,0 +1,45 @@
+@import '../../common-styles/variable.scss';
+
+.BlogPage_main {
+    .blog_main {
+        position: relative;
+        padding: 130px 0;
+
+        @media (max-width: 992px) {
+            padding: 72px 0;
+        }
+
+        @media (max-width: 575px) {
+            padding: 48px 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            background-color: $Primary;
+        }
+
+        .SectionHeadDesc_main,
+        .row_custom {
+            position: relative;
+            z-index: 2;
+        }
+
+        .row_custom {
+            gap: 24px 0;
+        }
+
+        .action_main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            margin-top: 48px;
+        }
+    }
+}

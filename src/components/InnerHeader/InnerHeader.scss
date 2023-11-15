@@ -1,0 +1,53 @@
+@import '../../common-styles/variable.scss';
+
+.InnerHeader_main {
+    position: relative;
+    background-color: $Light-Bg;
+    padding: 96px 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20%;
+        height: 100%;
+        background-color: $Primary;
+    }
+
+    .wrapper {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+
+        .heading {
+            color: $Dark;
+            margin-bottom: 16px;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .home_linkk {
+            color: $Dark;
+            font-weight: 600;
+            transition: .3s;
+
+            &:hover {
+                color: $Primary;
+            }
+        }
+
+        .active {
+            color: $Dark-65;
+
+            &::before {
+                color: $Dark-65;
+            }
+        }
+    }
+}

@@ -1,0 +1,202 @@
+@import '../../common-styles/variable.scss';
+
+.primary_btn {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 24px 13px 24px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Bold;
+    background-color: $Primary;
+    color: $White;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        background-color: $Dark;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $White;
+
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.primary_btn_small {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 16px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Bold;
+    background-color: $Primary;
+    color: $White;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        background-color: $Dark;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $White;
+
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.light_btn {
+    position: relative;
+    overflow: hidden;
+    padding: 15px 24px 13px 24px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Bold;
+    background-color: $Light-Bg;
+    color: $Dark;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        background-color: $Dark;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $White;
+
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.light_btn_small {
+    position: relative;
+    overflow: hidden;
+    padding: 8px 16px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Bold;
+    background-color: $Light-Bg;
+    color: $Dark;
+    border: none;
+    border-radius: 4px;
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        background-color: $Dark;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $White;
+
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.border_btn {
+    position: relative;
+    overflow: hidden;
+    padding: 14px 24px 12px 24px;
+    font-size: $font-size-16px;
+    line-height: $line-height-24px;
+    font-family: $font-family-Bold;
+    background-color: transparent;
+    border: 1px solid $Dark;
+    color: $Dark;
+    border-radius: 4px;
+    transition: .3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        width: 100%;
+        height: 100%;
+        background-color: $Dark;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &:hover {
+        color: $White;
+        border: 1px solid transparent;
+
+        &::after {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+}
