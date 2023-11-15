@@ -40,7 +40,7 @@ function ShopPage() {
                         <div className='col_cards_otr'>
                             <div className='filter_grid_list'>
                                 <div className='sort_otr'>
-                                    <p className='heading-sm sort_text xyz'>
+                                    <p className='heading-sm sort_text aaa'>
                                         Sort By:
                                     </p>
                                     <ThemeSelect
